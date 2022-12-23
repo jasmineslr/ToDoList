@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="font/css/all.min.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="todo-container">
+        <div class="title-box">
+            <i class="fa-solid fa-bars"></i>
+            To Do
+        </div>
+        <div class="todos">
+            <div class="do">
+                    <span class="circle"></span>
+                    wait
+                    <i class="fa-regular fa-trash-can"></i>
+            </div>
+            <div class="do done">
+                    <span class="circle"></span>
+                    wait more
+                    <i class="fa-regular fa-trash-can"></i>
+            </div>
+        </div>
+        <div id="new-task" onclick="add_todo()">
+            <i class="fa-solid fa-plus"></i>
+            <span>
+                New Task
+            </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

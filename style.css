@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#todo-container{
+    width: 400px;
+    margin: 50px auto;
+}
+.title-box{
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:#af7eeb ;
+    color: #fff;
+    font-family: tahoma;
+    position: relative;
+}
+.title-box i{
+    position: absolute;
+    left: 10px;
+    top: 16px;
+}
+.todos{
+    font-family: tahoma;
+    list-style-type: none;
+    min-height: 300px;
+    margin-top: 17px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.103);
+    
+}
+.do , .done{
+    line-height: 40px;
+    font-size: 14px;
+    font-family: tahoma;
+    color:#8d97ba ;
+    position: relative;
+    padding-left: 25px;
+}
+.done{
+    text-decoration: line-through;
+}
+.do i{
+    display: none;
+}
+.done i{
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.done .circle{
+    background-color: #af7eeb;
+}
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid #8d97ba;
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    cursor: pointer;
+}
+#new-task{
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    background-color:#af7eeb;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: -25px auto;
+    font-family: tahoma;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.103);
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+#new-task i{
+    position: absolute;
+    top: 17px;
+    left: 21px;
+}
+.fa-trash-can{
+    cursor: pointer;
+}
