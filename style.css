@@ -6,6 +6,12 @@
     width: 400px;
     margin: 50px auto;
 }
+@media only screen and (max-width: 600px){
+    #todo-container{
+        width: 300px;
+        margin: 50px auto;
+    }
+}
 .title-box{
     text-align: center;
     line-height: 50px;
