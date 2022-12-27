@@ -21,8 +21,15 @@
 // document.querySelector("ul").remove()
 //  FOR SAMPLE.html *********************************************************************************************************
 
+let btnpromot=document.getElementById("new-task");
+let btnOk=document.getElementById("promptOk");
+let btnCancel=document.getElementById("promptCancel");
+function showPrompt(){
+  document.querySelector('.container-promot').classList.remove("hidden")
+}
+btnpromot.addEventListener('click', showPrompt);
 function add_todo(){
-  let addTodo=window.prompt("what u gonna do?");
+  let addTodo=document.getElementById("input").value;
   //firstDiv
   let todo=document.createElement("div") ;
   todo.classList.add("do");
@@ -41,16 +48,23 @@ function add_todo(){
     if(addTodo){
       document.querySelector('.todos').append(todo);
     }
-    else{}
-
-  //console.log(todo)
+    else{
+    }
+};
+btnOk.addEventListener('click',add_todo);
+function hideit(){
+  document.querySelector(".container-promot").classList.add("hidden");
 }
+btnOk.addEventListener('click', hideit);
+btnCancel.addEventListener('click', hideit);
+//fill the circle
 document.addEventListener('click',function(e){
   if(e.target && e.target.getAttribute('class')== "circle"){
     let parent=e.target.parentElement;
     parent.classList.toggle("done")
   }
 });
+//delete task
 document.addEventListener("click",function(e){
    if(e.target && e.target.getAttribute('class') == "fa-regular fa-trash-can"){
     let cofirm=window.confirm(" You sure you want delete it?")
@@ -61,3 +75,4 @@ document.addEventListener("click",function(e){
     else{}
    }
 });
+setTimeout(function() {document.getElementById("input").focus() }, 2000);

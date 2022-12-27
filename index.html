@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--To Do LIst-->
     <div id="todo-container">
         <div class="title-box">
             <i class="fa-solid fa-bars"></i>
@@ -26,12 +27,21 @@
                     <i class="fa-regular fa-trash-can"></i>
             </div>
         </div>
-        <div id="new-task" onclick="add_todo()">
+        <div id="new-task">
             <i class="fa-solid fa-plus"></i>
             <span>
                 New Task
             </span>
         </div>
+    </div>
+    <!--Window Promot-->
+    <div class="container-promot hidden">
+        <div class="windos" id="finput">
+            <input id="input">
+            <button class="add-task btn" id="promptOk">add</button>
+            <button class="cancel btn" id="promptCancel">cancel</button>
+        </div> 
+           <div class="overlay"></div>
     </div>
     <script src="script.js"></script>
 </body>
